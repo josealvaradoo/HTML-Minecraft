@@ -68,14 +68,39 @@ footer {
 	width: 100vw;
 	padding: 20vh 0;
 }
-#picker-menu div {
+#picker-menu div:not(.header),
+#picker-menu div:not(.green) {
 	width: 50%;
 	text-align: left;
 	margin: auto;
 	padding: 1% 2%;
 	font-size: 1vw;
 }
-#picker-menu div:not(.active-world):hover, .active-world {
+#picker-menu div.green {
+	width: 16px;
+	height: 16px;
+	display: block;
+	background: greenyellow;
+	border-radius: 9999px;
+	border: 2px solid #000;
+	margin: 0;
+	padding: 0;
+}
+#picker-menu div.header {
+	display: inline-flex;
+	gap: 1rem;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: left;
+	width: 50%;
+	padding: 0;
+	margin: 0;
+}
+.hoverable {
+	border: solid transparent 2px;
+	padding: calc(1% - 2px) calc(2% - 2px);
+}
+.hoverable:hover {
 	border: solid #FFF 2px;
 	padding: calc(1% - 2px) calc(2% - 2px);
 }
