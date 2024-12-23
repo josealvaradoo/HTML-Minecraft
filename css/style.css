@@ -182,6 +182,9 @@ footer {
 .middle {
 	vertical-align: middle;
 }
+.pointer {
+	cursor: pointer;
+}
 footer .right {
 	margin-right: 10px;
 }
