@@ -4,203 +4,220 @@
 	src: url("../css/minecraft.ttf");
 }*/
 @font-face {
-  font-family: 'Minecraft';
+  font-family: "Minecraft";
   src: url("../css/minecraftfont.eot");
-  src: url("../css/minecraftfont.woff") format("woff"), url("../css/minecraftfont.ttf") format("truetype");
+  src:
+    url("../css/minecraftfont.woff") format("woff"),
+    url("../css/minecraftfont.ttf") format("truetype");
 }
 
 html {
-	height: 100%;
-	overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
 body {
-	image-rendering: pixelated;
-	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), #866043 url("../img/dirt.png") repeat 0 0;
-	background-size: 10%;
-	color: #FFF;
-	text-align: center;
-	font-family: Minecraft;
-	text-shadow: 0.2vw 0.2vw 0 #383838;
-	min-height: 100%;
-	margin: 0;
+  image-rendering: pixelated;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    #866043 url("../img/dirt.png") repeat 0 0;
+  background-size: 10%;
+  color: #fff;
+  text-align: center;
+  font-family: Minecraft;
+  text-shadow: 0.2vw 0.2vw 0 #383838;
+  min-height: 100%;
+  margin: 0;
 }
-img, main, div {
-	image-rendering: pixelated;
+img,
+main,
+div {
+  image-rendering: pixelated;
 }
 img {
-	width: 100%
+  width: 100%;
 }
 a {
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	font-size: 1.2vw;
-	color: white;
-	margin-bottom: 0.4vw;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.2vw;
+  color: white;
+  margin-bottom: 0.4vw;
 }
 #panorama {
-	image-rendering: auto;
-	background: #303030 url("../img/panorama.png") repeat-x 0 0;
-	background-size: cover;
-	animation: MinecraftBackground 180s linear infinite;
-	backdrop-filter: blur(16px);
+  image-rendering: auto;
+  background: #303030 url("../img/panorama.png") repeat-x 0 0;
+  background-size: cover;
+  animation: MinecraftBackground 180s linear infinite;
+  backdrop-filter: blur(16px);
 }
 #logo {
-	margin-top: 5%;
-	width: 50%;
+  margin-top: 5%;
+  width: 50%;
 }
 /* TODO: Make the flashing text scale down as more text is added */
 #flashingtext {
-	margin: -3.5% 0 0 47%;
-	width: 40%;
-	transform: rotate(-20deg);
-	animation: FlashingText 0.5s ease-in-out infinite;
-	color: #FFFF00;
-	font-size: 2vw;
+  margin: -3.5% 0 0 47%;
+  width: 40%;
+  transform: rotate(-20deg);
+  animation: FlashingText 0.5s ease-in-out infinite;
+  color: #ffff00;
+  font-size: 2vw;
 }
 #picker-menu {
-	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-	box-shadow: inset -5px 0px 20px 2px #000, inset 5px 0px 20px 2px #000;
-	width: 100vw;
-	padding: 20vh 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  box-shadow:
+    inset -5px 0px 20px 2px #000,
+    inset 5px 0px 20px 2px #000;
+  width: 100vw;
+  padding: 20vh 0;
 }
 #picker-menu div:not(.header),
 #picker-menu div:not(.green) {
-	width: 50%;
-	text-align: left;
-	margin: auto;
-	padding: 1% 2%;
-	font-size: 1vw;
+  width: 50%;
+  text-align: left;
+  margin: auto;
+  padding: 1% 2%;
+  font-size: 1vw;
 }
 #picker-menu div.green {
-	width: 16px;
-	height: 16px;
-	display: block;
-	background: greenyellow;
-	border-radius: 9999px;
-	border: 2px solid #000;
-	margin: 0;
-	padding: 0;
+  width: 16px;
+  height: 16px;
+  display: block;
+  background: greenyellow;
+  border-radius: 9999px;
+  border: 2px solid #000;
+  margin: 0;
+  padding: 0;
 }
 #picker-menu div.header {
-	display: inline-flex;
-	gap: 1rem;
-	justify-content: flex-start;
-	align-items: center;
-	text-align: left;
-	width: 50%;
-	padding: 0;
-	margin: 0;
+  display: inline-flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  width: 50%;
+  padding: 0;
+  margin: 0;
 }
 .hoverable {
-	border: solid transparent 2px;
-	padding: calc(1% - 2px) calc(2% - 2px);
+  border: solid transparent 2px;
+  padding: calc(1% - 2px) calc(2% - 2px);
 }
 .hoverable:hover {
-	border: solid #FFF 2px;
-	padding: calc(1% - 2px) calc(2% - 2px);
+  border: solid #fff 2px;
+  padding: calc(1% - 2px) calc(2% - 2px);
 }
 #picker-title {
-	font-weight: normal;
-	font-size: 2vw;
+  font-weight: normal;
+  font-size: 2vw;
 }
 #loading-title {
-	margin-top: 45vh;
-	font-size: 1.8vw;
-	font-weight: normal;
+  margin-top: 45vh;
+  font-size: 1.8vw;
+  font-weight: normal;
 }
 .button-wrapper {
-	margin: 8vw 30vw 0 30vw;
-	width: 40vw;
+  margin: 8vw 30vw 0 30vw;
+  width: 40vw;
 }
 .picker-button-wrapper {
-	margin: 0 5vw;
+  margin: 0 5vw;
 }
 .picker-buttons {
-	position: absolute;
-	bottom: 10%;
-	width: 90vw;
+  position: absolute;
+  bottom: 10%;
+  width: 90vw;
 }
 .button {
-	/* padding: 0.2% 50vw; */
-	padding: 0.2vw 0 0.8vw 0;
-	margin: 0 auto 2% auto;
-	background: #7D7D7D url("../img/buttons.png") no-repeat center;
-	background-size: 100% 300%;
-	color: #E0E0E0;
-	font-size: 1.2vw;
-	outline: 0.2vw solid #000;
-	outline-offset: -0.2vw;
+  /* padding: 0.2% 50vw; */
+  padding: 0.2vw 0 0.8vw 0;
+  margin: 0 auto 2% auto;
+  background: #7d7d7d url("../img/buttons.png") no-repeat center;
+  background-size: 100% 300%;
+  color: #e0e0e0;
+  font-size: 1.2vw;
+  outline: 0.2vw solid #000;
+  outline-offset: -0.2vw;
 }
 .button_small {
-	width: 49%;
-	display: inline-block;
-	margin-top: 5%;
+  width: 49%;
+  display: inline-block;
+  margin-top: 5%;
 }
 .picker-button1 {
-	display: inline-block;
-	width: 40.5%;
-	margin-bottom: 1.5%;
+  display: inline-block;
+  width: 40.5%;
+  margin-bottom: 1.5%;
 }
 .picker-button2 {
-	display: inline-block;
-	width: 20%;
+  display: inline-block;
+  width: 20%;
 }
 .picker-header {
-	font-size: 1.2em;
+  font-size: 1.2em;
 }
 .picker-text {
-	color: #808080;
-	font-size: 1.2em;
+  color: #808080;
+  font-size: 1.2em;
 }
 .button:hover {
-	background: #7079AA url("../img/buttons.png") no-repeat bottom;
-	background-size: 100% 300%;
-	color: #FFFFA0;
+  background: #7079aa url("../img/buttons.png") no-repeat bottom;
+  background-size: 100% 300%;
+  color: #ffffa0;
 }
-.button:disabled, .button[disabled] {
-	background: #272727 url("../img/buttons.png") no-repeat top;
-	background-size: 100% 300%;
-	color: #A9A9A9;
+.button:disabled,
+.button[disabled] {
+  background: #272727 url("../img/buttons.png") no-repeat top;
+  background-size: 100% 300%;
+  color: #a9a9a9;
 }
 .button span {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 .left {
-	float: left;
+  float: left;
 }
 .right {
-	float: right;
+  float: right;
 }
 .bold {
-	font-weight: bold;
+  font-weight: bold;
 }
 .middle {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 .pointer {
-	cursor: pointer;
+  cursor: pointer;
 }
 footer .right {
-	margin-right: 10px;
+  margin-right: 10px;
+}
+.discord-container {
+  display: block;
+  margin-top: 14rem;
+  font-size: 1rem;
+}
+.discord {
+  width: 4rem;
 }
 @keyframes FlashingText {
-	0% {
-		transform: scale(1) rotate(-20deg);
-	}
-	50% {
-		transform: scale(1.05) rotate(-20deg);
-	}
-	100% {
-		transform: scale(1) rotate(-20deg);
-	}
+  0% {
+    transform: scale(1) rotate(-20deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(-20deg);
+  }
+  100% {
+    transform: scale(1) rotate(-20deg);
+  }
 }
 @keyframes MinecraftBackground {
-	100% {
-		background-position-x: 1000%;
-	}
+  100% {
+    background-position-x: 1000%;
+  }
 }
